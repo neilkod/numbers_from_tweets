@@ -31,6 +31,34 @@ I think some useful things can be done with the numbers that are extracted from 
     73089 7
     73051 0
 
+We can also find which numbers occur most frequently in this sample of tweets:
+
+    nkodner@hadoop4 numbers_from_tweets$ cat output/numbers_from_12milliontweets_cast_as_long.txt |sort|uniq -c|sort -nr|head -25|awk '{printf "%d. %s\n",NR,$0}'
+    1. 267416 3
+    2. 163757 2
+    3. 143249 1
+    4. 117857 5
+    5. 81915 4
+    6. 73051 0
+    7. 61276 10
+    8. 55091 8
+    9. 52567 6
+    10. 52285 11
+    11. 51008 2012
+    12. 45012 12
+    13. 44958 7
+    14. 37254 9
+    15. 32759 30
+    16. 31647 20
+    17. 27792 15
+    18. 26327 100
+    19. 20465 13
+    20. 18965 18
+    21. 18472 50
+    22. 17956 14
+    23. 17068 16
+    24. 13841 24
+    25. 13715 19
 
 [1]: http://en.wikipedia.org/wiki/Benford%27s_law
 
