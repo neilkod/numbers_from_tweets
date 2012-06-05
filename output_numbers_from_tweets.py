@@ -19,7 +19,7 @@ for itm in sys.stdin:
   # remove any entities from the tweet (hashtags/urls/@mentions)
   # using the start/end positions should be faster than a regex
   # grab the start/end position of each entitiy and then add to
-  # the list tostrip
+  # the list to_strip
   # the entity positions can arrive in any order.
   if strip_entities:
     to_strip=[]
@@ -27,8 +27,7 @@ for itm in sys.stdin:
     for k,v in entities.iteritems():
       for ent in v: 
         try:
-          (start_pos,end_pos)=ent['indices']
-          tostrip.append((start_pos,end_pos))
+          to_strip.append(ent['indices'])
 
         except KeyError:
           # no entities/indicies. pass
