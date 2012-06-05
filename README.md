@@ -11,7 +11,8 @@ usage:
 
     time zcat ~/one_point_five_million_tweets.Z |python output_numbers_from_tweets.py > numbers_from_1point5milliontweets.txt
 
-todo: flag for determining whether or not to strip entities
+todo:
+-~~flag for determining whether or not to strip entities~~
 
 why?
 ====
