@@ -9,7 +9,7 @@ for itm in sys.stdin:
   try:
     data = json.loads(line)
   except:
-    #print "couldn't convert %s to json" % line
+		# can't always convert the raw data to json. silently fail and move on
     continue
   txt=data['text']
   tostrip=[]
