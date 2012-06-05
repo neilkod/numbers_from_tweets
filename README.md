@@ -17,7 +17,7 @@ todo:
 why?
 ====
 
-I think some useful things can be done with the numbers that are extracted from a large number of tweets. The first thing I checked was to see if the extracted numbers fit [benford's law][1]. Spoiler alert: They did!
+I think some useful things can be done with the numbers that are extracted from a large-ish number of tweets. The first thing I checked was to see if the extracted numbers from 12e6 tweets fit [benford's law][1]. Spoiler alert: They did!
 
     nkodner@hadoop4 numbers_from_tweets$ awk '{print substr($1,0,1)}' output/numbers_from_12milliontweets_cast_as_long.txt |sort -n|uniq -c|sort -nr
     541115 1
