@@ -22,7 +22,6 @@ for itm in sys.stdin:
 
       except KeyError:
         # no entities/indicies. pass
-        print "error hre"
         pass
 
   for x in sorted(tostrip, reverse=True):
