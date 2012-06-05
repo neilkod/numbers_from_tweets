@@ -1,4 +1,4 @@
-numbers_from_tweets
+numbers from tweets
 ===================
 
 given input as raw twitter data in json format, this code will do the following:
@@ -18,4 +18,17 @@ why?
 
 I think some useful things can be done with the numbers that are extracted from a large number of tweets. The first thing I checked was to see if the extracted numbers fit [benford's law][1]. Spoiler alert: They did!
 
+    $ awk '{print substr($1,0,1)}' numbers_from_12milliontweets_cast_as_long.txt |sort -n|uniq -c|sort -n
+    73051 0
+    73089 7
+    74252 9
+    83887 6
+    85316 8
+    135144 4
+    213307 5
+    373189 3
+    399356 2
+    541115 1
+
 [1]: http://en.wikipedia.org/wiki/Benford%27s_law
+
