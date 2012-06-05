@@ -8,4 +8,8 @@ given input as raw twitter data in json format, this code will do the following:
 Entity mentions are stripped using data from twitter's supplied entities, including start/end position. Although I haven't measured the performance, it should be faster than performing multiple regex substitutions against each tweet.
 
 usage:
+
     time zcat ~/one_point_five_million_tweets.Z |python output_numbers_from_tweets.py > numbers_from_1point5milliontweets.txt
+
+todo: flag for determining whether or not to strip entities
+
