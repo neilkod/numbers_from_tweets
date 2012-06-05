@@ -13,3 +13,9 @@ usage:
 
 todo: flag for determining whether or not to strip entities
 
+why?
+====
+
+I think some useful things can be done with the numbers that are extracted from a large number of tweets. The first thing I checked was to see if the extracted numbers fit [benford's law][1]. Spoiler alert: They did!
+
+[1]: http://en.wikipedia.org/wiki/Benford%27s_law
